@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Огляд гри Zenless Zone Zero</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Огляд Zenless Zone Zero: знайомство з ігровим світом, фракціями, популярними персонажами та особливостями захопливої рольової гри.">
+    <meta name="keywords" content="Zenless Zone Zero, ZZZ, відеоігри, фракції, персонажі, огляд гри, HoYoverse">
+    <meta name="author" content="Вацик Максим">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta property="og:title" content="Огляд гри Zenless Zone Zero">
+    <meta property="og:description" content="Знайомство зі світом Zenless Zone Zero, її фракціями та персонажами.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="uk_UA">
+
+
 </head>
 
 <body>
@@ -14,7 +24,9 @@
     <header class="site-header">
         <div class="header-container">
             <div class="logo">ZZZ Guide</div>
-            <nav class="site-nav">
+            
+                
+            <nav class="site-nav" aria-label="Головне меню сайту">
                 <ul>
                     <li><a href="#about">Про гру</a></li>
                     <li><a href="#features">Персонажі</a></li>
@@ -26,7 +38,7 @@
     </header>
 
     <!-- 2. Тематичні секції -->
-    <main>
+    <main id="main-content">
         <section id="about" class="section">
             <div class="container">
                 <h1 id="page-title">Zenless Zone Zero: Динамічний екшн у стилі урбан-фентезі</h1>
@@ -42,10 +54,18 @@
                 </p>
             </div>
         </section>
+        <aside class="sidebar">
+            <h3>Порада новачкам:</h3>
+            <p>
+
+У грі <strong>Zenless Zone Zero</strong> найкраще на початку проходити сюжетну історію. Це допоможе отримати приємні враження від гри, познайомитися з новими персонажами, відкрити нові локації та дізнатися більше про ігровий світ.
+
+Крім того, проходження сюжету допоможе відкривати доступ до подій, за які можна отримувати ігрову валюту — поліхроми — та різноманітні ресурси для прокачування персонажів. Усе це особливо корисно на початку гри.</p>
+            </aside>
 
         <section id="features" class="section">
             <div class="container">
-                <h3 class="section-title">Три фракції гри</h3>
+                <h2 class="section-title">Три фракції гри</h2>
                 <ul>
                     <li><strong>Секція 6</strong> — організація, що займається дослідженням аномалій та захистом міста.</li>
                     <li><strong>Загін "Обол"</strong> — військова фракція, яка входить до складу Обсидіанової дивізії Збройних сил Нью-Еріду.</li>
@@ -56,21 +76,34 @@
                 <!-- Приклад блоку для локального позиціонування (relative + absolute) -->
                 <div class="card-with-badge" style="position: relative;">
                     <span class="badge" style="position: absolute; top: -10px; right: 15px;">ХІТ</span>
-                    <ol>
-                        <li><strong>Хошімі Міябі</strong> — Командир фракції "Секція 6".</li>
-                        <img src="hoshimi_miyabi.jpg" width="150" alt="Хошімі Міябі з фракції Секція 6">
-                        <li><strong>Раміелла Дан</strong> — Мисливиця каверн першого покоління.</li>
-                        <img src="remielle_dan.webp" width="150" alt="Раміелла Дан, мисливиця каверн">
-                        <li><strong>Ісюань</strong> — Шифу храму "Суйбянь".</li>
-                        <img src="yixuan.webp" width="150" alt="Ісюань, шифу храму Суйбянь">
-                    </ol>
+                    <article class="card">
+    <h4>Хошімі Міябі</h4>
+    <p>Командир фракції «Секція 6».</p>
+    <img src="hoshimi_miyabi.jpg" width="175"
+         alt="Хошімі Міябі з фракції Секція 6">
+</article>
+
+<article class="card">
+    <h4>Раміелла Дан</h4>
+    <p>Мисливиця каверн першого покоління.</p>
+    <img src="remielle_dan.webp" width="175"
+         alt="Раміелла Дан, мисливиця каверн">
+</article>
+
+<article class="card">
+    <h4>Ісюань</h4>
+    <p>Шифу храму «Суйбянь».</p>
+    <img src="yixuan.webp" width="175"
+         alt="Ісюань, шифу храму Суйбянь">
+</article>
+                    
                 </div>
             </div>
         </section>
 
         <section id="table" class="section">
             <div class="container">
-                <h3 class="section-title">Характеристики персонажів</h3>
+                <h2 class="section-title">Характеристики персонажів</h2>
                 <table>
                     <tr>
                         <th>Ім'я</th>
@@ -98,19 +131,85 @@
 
         <section id="gallery" class="section">
             <div class="container">
-                <h3 class="section-title">Галерея скріншотів</h3>
+                <h2 class="section-title">Галерея скріншотів</h2>
                 <!-- 3. Спільний Grid-контейнер для галереї -->
-                <div class="grid-gallery">
-                    <img src="zzz_gameplay1.jpg" width="200" height="150" alt="Скріншот геймплею ZZZ 1">
-                    <img src="zzz_gameplay2.jpg" width="200" height="150" alt="Скріншот геймплею ZZZ 2">
-                    <img src="zzz_gameplay3.jpg" width="200" height="150" alt="Скріншот геймплею ZZZ 3">
+               <div class="grid-gallery">
+                    <div class="gallery-item">
+                        <img src="zzz_gameplay1.jpg" width="200" height="150" alt="Скріншот геймплею ZZZ 1">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="zzz_gameplay2.jpg" width="200" height="150" alt="Скріншот геймплею ZZZ 2">
+                    </div>
+
+                     <div class="gallery-item">
+                        <img src="zzz_gameplay3.jpg" width="200" height="150" alt="Скріншот геймплею ZZZ 3">
+                    </div>
                 </div>
+            </div>
+        </section>
+            <section id="feedback" class="section">
+            <div class="container">
+                <h2 class="section-title">Зворотний зв'язок</h2>
+
+                <form action="#" method="POST">
+                    <label for="user-name">Ваше ім'я:</label>
+                    <input type="text" id="user-name" name="user_name"
+                    placeholder="Введіть ваше ім'я" required>
+
+                    <label for="user-email">Ваша електронна пошта:</label>
+                    <input type="email" id="user-email" name="user_email"
+                    placeholder="example@gmail.com" required>
+
+                    <label for="user-subject">Тема звернення</label>
+                    <select id="user-subject" name="user_subject" required>
+                        <option value="" disabled selected>Виберіть тему повідомлення</option>
+                        <option value="question">Питання про персонажів</option>
+                        <option value="feedback">Питання про фракції</option>
+                        <option value="bug">Відгук про гру</option>
+                    </select>
+
+                    <label for="user-message">Ваше повідомлення:</label>
+                    <textarea id="user-message" name="user_message" rows="4"
+                    placeholder="Введіть ваше повідомлення" required></textarea>
+                    <div class="form-option">
+    <input type="radio" id="user-answer"
+           name="user_answer" value="email" required>
+    <label for="user-answer">Написати на Email: maksym.v.vatsyk@ukd.edu.ua.</label>
+
+    <input type="radio" id="user-call"
+           name="user_answer" value="call">
+    <label for="user-call">Зателефонувати на номер: +380 67 348 69 04.</label>
+</div>
+
+<div class="form-option">
+    <input type="checkbox" id="terms"
+           name="terms" value="accepted" required>
+    <label for="terms">
+        Я погоджуюсь з умовами обробки персональних даних
+    </label>
+</div>
+                    <button type="submit">Надіслати повідомлення</button>
+
+                </form>
             </div>
         </section>
     </main>
 
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>Автор: Вацик Максим</p>
+            <p>Група: КІПЗс-25-2</p>
+            <p>Рік виконання: 2026</p>
+            <p>Дисципліна: Інженерія програмного забезпечення</p>
+            <p>Практична робота: № 7 — «Методи створення анімацій та ефектів стилізації у вебдизайні»</p>
+            <p>Контактна інформація: maksym.v.vatsyk@ukd.edu.ua
+
+            </p>
+        </div>
+    </footer>
     <!-- 5. Плаваюча кнопка повернення наверх -->
-    <a href="#about" class="scroll-top-btn">↑</a>
+    <a href="#" class="scroll-top-btn" aria-label="Повернутися до початку сторінки">↑</a>
 
 </body>
 
